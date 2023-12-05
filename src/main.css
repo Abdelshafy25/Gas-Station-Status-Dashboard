@@ -1,0 +1,404 @@
+.main {
+  background: #f9f5f3;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 60rem 1fr;
+}
+
+ul {
+  /* padding: 20px; */
+  position: relative;
+  margin-bottom: 5rem;
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  z-index: 100;
+}
+
+li {
+  background-color: #fff;
+  /* padding: 16px 32px; */
+  padding: 1rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.values {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.numbers {
+  text-align: left;
+  font: normal normal normal 30px Roboto;
+  color: #3d5161;
+}
+
+.unit {
+  text-align: left;
+  font: normal normal normal 15px Roboto;
+  color: #3d5161;
+}
+
+.type {
+  position: relative;
+  text-align: left;
+  font: bold 17px Montserrat;
+  color: #3d5161;
+  margin-bottom: 16px;
+  max-width: 150px;
+}
+
+.type span {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+}
+
+.precent {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding-top: 10px;
+}
+
+.shape {
+  width: 0;
+  height: 0;
+  border-top: 6px solid inherit;
+
+  /* border-bottom: 10px solid transparent; */
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.text {
+  font: normal normal normal 16px Roboto;
+  color: inherit;
+}
+
+sup {
+  font-size: 10px;
+}
+/*////////////////////////////////*/
+
+/* width */
+.stations::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.stations::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ff7f5c;
+  border-radius: 10px;
+}
+
+/* Handle */
+.stations::-webkit-scrollbar-thumb {
+  background: #ff7f5c;
+  border-radius: 10px;
+}
+
+.stations {
+  position: relative;
+  padding-right: 15px;
+  height: 350px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: hidden;
+}
+
+.stationInfo {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  position: relative;
+  border-radius: 25px;
+}
+
+.firstRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.circle2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background: #ff7f5c;
+  margin-right: 12px;
+  align-self: flex-end;
+}
+
+.stationlogo2 {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.stationName {
+  text-align: left;
+  font: normal normal bold 15px Montserrat;
+  letter-spacing: 1.8px;
+  color: #3d5161;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+hr {
+  border: 1px solid #e0e7f1;
+  margin-bottom: 2rem;
+}
+
+.dots {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 30px;
+}
+
+.gridItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: normal normal bold 11px Montserrat;
+}
+
+.window {
+  position: absolute;
+  top: 52px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  font: normal normal 600 11px Nunito Sans;
+}
+
+.windowGrid {
+  display: grid;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
+}
+
+.windowGrid div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.windowGrid div input {
+  opacity: 0;
+}
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ff7f5c;
+  border-radius: 5px;
+}
+
+.windowGrid div input:checked ~ .checkmark {
+  background-color: #ff7f5c;
+}
+
+.windowGrid label {
+  font: normal normal 600 11px Nunito Sans;
+  align-items: center;
+}
+
+/* 
+<FontAwesomeIcon icon={faList} size="sm" style={{ color: "#3d5161" }} />
+*/
+
+.btnsContainer {
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  /* gap: 10px; */
+  right: 25px;
+  bottom: -4rem;
+  border-radius: 20px;
+}
+
+.btnsContainer button {
+  border: none;
+  background-color: #fff;
+  text-align: left;
+  font: normal normal bold 13px Montserrat;
+  letter-spacing: 1.4px;
+  color: #3d5161;
+  cursor: pointer;
+  padding: 10px 13px;
+  border-radius: 30px;
+}
+.activeBtn {
+  background-color: #ff7f5c;
+}
+
+/* ////////////////////// */
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font: normal normal bold 12px/15px Montserrat;
+  letter-spacing: 1.2px;
+  color: #3d5161;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  height: 400px;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem 2rem; */
+  margin-bottom: 0.5rem;
+}
+
+.category {
+  display: flex;
+  gap: 1rem;
+}
+
+.activeCategory {
+  color: #ff7f5c;
+  padding-bottom: 5px;
+  border-bottom: #ff7f5c 5px solid;
+}
+
+.chart {
+  width: 800px;
+  height: 600px;
+  /* align-self: baseline; */
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+/* //////////////// */
+
+.chartSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: left;
+  font: normal normal bold 17px Montserrat;
+  letter-spacing: 0px;
+  color: #3d5161;
+}
+
+.sales {
+  margin-bottom: 2rem;
+}
+
+.radarchart {
+  margin-bottom: 2rem;
+}
+
+.salesbystation {
+  margin-bottom: 2rem;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font: normal normal bold 13px Montserrat;
+  letter-spacing: 0px;
+  color: #3d5161;
+  align-self: flex-start;
+  padding-left: 2rem;
+  gap: 15px;
+}
+
+.progressStation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.progressStationInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.staionIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.stationName {
+  text-align: center;
+  font: normal normal bold 13px Montserrat;
+  letter-spacing: 0px;
+  color: #3d5161;
+}
+
+.salesprogressoff {
+  color: #b9cde2;
+}
+
+.progressBar {
+  position: relative;
+}
+
+.barHolder {
+  height: 7px;
+  border-radius: 5px;
+  background-color: #f4dbd4;
+}
+.barprogres {
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #ff7f5c;
+  top: 0;
+}
+
+.barHolderoff {
+  height: 7px;
+  border-radius: 5px;
+  background-color: #b9cde2;
+}

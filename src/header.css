@@ -1,0 +1,133 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.monitoredStation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.monitoredStation_Container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background: #ff7f5c;
+  margin-right: 12px;
+}
+
+.stationLogo {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.stationNum {
+  text-align: left;
+  font: normal normal normal 25px Roboto;
+  color: #3d5161;
+
+  margin-right: 5px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textContainer div {
+  text-align: left;
+  font: normal normal normal 11px Roboto;
+  color: #3d5161;
+}
+
+.daysContainer {
+  display: flex;
+  background: #f9f5f3;
+  border-radius: 10px;
+}
+
+.daysContainer div {
+  padding: 7px 22px;
+
+  border-radius: 20px;
+
+  text-align: left;
+  font: normal normal normal 11px Montserrat;
+  letter-spacing: 1.4px;
+  color: #3d5161;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.active {
+  background: #ff7f5c;
+}
+
+.dateBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid #ff7f5c;
+
+  cursor: pointer;
+
+  transition-duration: 0.4s;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #3d5161;
+  text-align: left;
+  letter-spacing: NaNpx;
+  color: #3d5161;
+  font-family: "Roboto";
+  padding: 3px 20px 10px 10px;
+}
+
+.rec {
+  width: 12px;
+  height: 12px;
+  background: #ff7f5c;
+  cursor: pointer;
+}
+
+.dateBox .calender {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.dateBox .clock {
+  position: absolute;
+  background-color: #fff;
+  right: 3px;
+  bottom: 6px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
